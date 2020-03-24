@@ -1,0 +1,50 @@
+@import "styles/_variables";
+@import "styles/_mixins";
+
+.App {
+  display: grid;
+  grid-template: {
+    areas: "header"
+           "main"
+           "sidebar"
+           "footer";
+    rows: 3em auto auto 3em;
+  }
+}
+
+.Header {
+  background: red;
+  color: white;
+  grid-area: header;
+}
+
+.Sidebar {
+  background: blue;
+  color: white;
+  grid-area: sidebar;
+}
+
+.Content {
+  background: green;
+  color: white;
+  grid-area: main;
+}
+
+.Footer {
+  background: salmon;
+  color: white;
+  grid-area: footer;
+}
+
+@include breakpoint('medium') {
+  .App {
+    display: grid;
+    grid-template: {
+      columns: 2fr 4fr;
+      rows: 3em auto 3em;
+      areas: "header header"
+             "sidebar main"
+             "footer footer";
+    }
+  }
+}
