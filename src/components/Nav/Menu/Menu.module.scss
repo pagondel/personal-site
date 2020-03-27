@@ -1,0 +1,95 @@
+@import '../../../styles/_mixins';
+@import '../../../styles/_variables';
+
+.Menu {
+  display: none;
+  background: $light-gray;
+  height: 100vh;
+  margin: 0;
+  position:fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  &.Open {
+    display: block
+  }
+}
+
+.Backdrop {
+  background-color: $transparent_black;
+  height: 100vh;
+  left:0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.Hamburger {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  outline-color: $gray;
+}
+
+.CloseTag {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  position:absolute;
+  outline-color: $gray;
+  right: 0;
+  top: 0;
+}
+
+.Items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin-top: 2.5rem;
+}
+
+.Item {
+  box-sizing: border-box;
+  border-bottom: 1px $gray solid;
+  font-size: 1.5rem;
+  list-style: none;
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  
+}
+
+@include breakpoint('small') {
+  .Menu {
+    background: $white;
+    height: 100%;
+    position: static;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .Hamburger {
+    display: none;
+  }
+
+  .CloseTag {
+    display: none;
+  }
+
+  .Items {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Item {
+    border: none;
+    font-size: 1rem;
+    list-style: none;
+    margin: 0 1.5em;
+  }
+}
