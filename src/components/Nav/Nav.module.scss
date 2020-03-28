@@ -3,7 +3,6 @@
 
 .Nav {
   align-items: center;
-  border-bottom: 1px $gray solid;
   display: flex;
   height: 100%;
   justify-content: space-between;
@@ -12,7 +11,10 @@
 .Title {
   margin: 0;
   margin-left:1em;
-  min-width: 13.5rem;
+  width: 100%;
+  color: $white;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 @include breakpoint('small') {

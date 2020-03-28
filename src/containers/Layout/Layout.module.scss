@@ -6,9 +6,8 @@
   grid-template: {
     areas: 'header'
            'main'
-           'sidebar'
            'footer';
-    rows: 3em auto auto 3em
+    rows: 3rem minmax(calc(100vh - 6rem), max-content) 3rem
   }
 }
 
@@ -17,14 +16,13 @@
 }
 
 .Sidebar {
-  // background: blue;
-  // color: white;
+  display: none;
   grid-area: sidebar;
 }
 
 .Content {
-  // background: green;
-  // color: white;
+  background: green;
+  color: white;
   grid-area: main;
 }
 
@@ -34,22 +32,19 @@
   grid-area: footer;
 }
 
-@include breakpoint('medium') {
+@include breakpoint('small') {
   .App {
     display: grid;
     grid-template: {
-      columns: 2fr 4fr;
-      rows: 3em auto 3em;
+      columns: auto 15rem;
+      rows: 3em minmax(calc(100vh - 6rem), max-content) 3em;
       areas: 'header header'
-             'sidebar main'
+             'main sidebar'
              'footer footer';
     }
   }
-}
 
-@include breakpoint('large') {
-  .App {
-    max-width: map-get($breakpoints, 'large');
-    margin: auto
+  .Sidebar {
+    display: block;
   }
 }

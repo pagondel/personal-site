@@ -44,24 +44,8 @@ class Menu extends Component {
       menuClasses,
     } = this.state;
 
-    let backdrop = null;
-
-    if (menuClasses.includes(styles.Open)) {
-      backdrop = (
-        <div
-          className={styles.Backdrop}
-          onClick={this.handleCloseMenu}
-          onKeyPress={this.handleCloseMenu}
-          role="button"
-          tabIndex="0"
-          aria-label="backdrop"
-        />
-      );
-    }
-
     return (
       <>
-        {backdrop}
         <div
           className={styles.Hamburger}
           onClick={this.handleOpenMenu}
@@ -84,7 +68,7 @@ class Menu extends Component {
             <i className="fas fa-times fa-2x" />
           </div>
           <ul className={styles.Items}>
-            <li className={styles.Item}>Inicio</li>
+            <li className={styles.Item}><a href="http://google.cl">Inicio</a></li>
             <li className={styles.Item}>Resume</li>
             <li className={styles.Item}>Contacto</li>
           </ul>

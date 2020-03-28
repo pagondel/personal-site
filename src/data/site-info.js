@@ -1,5 +1,5 @@
 const data = {
-  title: 'Patricio Gonzalez',
+  title: 'Patricio González',
   keywords: [
     'developer',
     'backend',

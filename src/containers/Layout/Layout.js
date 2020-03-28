@@ -25,7 +25,7 @@ class Layout extends Component {
             title={SiteInfo.title}
           />
         </header>
-        <aside className={styles.Sidebar}>sidebar</aside>
+        <aside className={styles.Sidebar} />
         <main className={styles.Content}>content</main>
         <footer className={styles.Footer}>footer</footer>
       </div>
