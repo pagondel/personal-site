@@ -1,3 +1,5 @@
+@import 'styles/_variables';
+
 @import url('https://fonts.googleapis.com/css?family=Sarabun:400,700&display=swap');
 
 body {
@@ -5,4 +7,5 @@ body {
   font-family: Sarabun, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: $background-gray;
 }
