@@ -1,0 +1,11 @@
+.Footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 2rem 2rem;
+
+  li {
+    margin: 0 1rem;
+  }
+}

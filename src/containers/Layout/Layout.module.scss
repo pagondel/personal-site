@@ -8,7 +8,7 @@
     areas: 'header'
            'main'
            'footer';
-    rows: 6rem minmax(calc(100vh - 9rem), max-content) 3rem
+    rows: 6rem minmax(calc(100vh - 12rem), max-content) 6rem
   }
 }
 
@@ -36,7 +36,7 @@
       columns: auto 15rem;
       areas: 'header header'
              'main sidebar'
-             'footer footer';
+             'footer';
     }
   }
 

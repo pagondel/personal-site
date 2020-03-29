@@ -5,6 +5,7 @@ import styles from './Layout.module.scss';
 import SiteInfo from '../../data/site-info';
 import Nav from '../../components/Nav/Nav';
 import Home from '../../components/Home/Home';
+import Footer from '../../components/Footer/Footer';
 
 class Layout extends Component {
   constructor(props) {
@@ -30,7 +31,9 @@ class Layout extends Component {
         <main className={styles.Content}>
           <Home />
         </main>
-        <footer className={styles.Footer}>footer</footer>
+        <footer className={styles.Footer}>
+          <Footer />
+        </footer>
       </div>
     );
   }
