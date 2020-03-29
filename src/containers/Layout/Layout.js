@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import styles from './Layout.module.scss';
 import SiteInfo from '../../data/site-info';
 import Nav from '../../components/Nav/Nav';
+import Home from '../../components/Home/Home';
 
 class Layout extends Component {
   constructor(props) {
@@ -26,7 +27,9 @@ class Layout extends Component {
           />
         </header>
         <aside className={styles.Sidebar} />
-        <main className={styles.Content}>content</main>
+        <main className={styles.Content}>
+          <Home />
+        </main>
         <footer className={styles.Footer}>footer</footer>
       </div>
     );
