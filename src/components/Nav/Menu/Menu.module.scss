@@ -49,7 +49,7 @@
   margin: 1.5rem;
 }
 
-@include breakpoint('small') {
+@include breakpoint('medium') {
   .Menu {
     display: block;
     width: 13.5rem;

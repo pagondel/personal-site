@@ -2,12 +2,13 @@
 @import '../../styles/_mixins';
 
 .App {
+  color: $white;
   display: grid;
   grid-template: {
     areas: 'header'
            'main'
            'footer';
-    rows: 3rem minmax(calc(100vh - 6rem), max-content) 3rem
+    rows: 6rem minmax(calc(100vh - 9rem), max-content) 3rem
   }
 }
 
@@ -21,23 +22,18 @@
 }
 
 .Content {
-  background: green;
-  color: white;
   grid-area: main;
 }
 
 .Footer {
-  background: salmon;
-  color: white;
   grid-area: footer;
 }
 
-@include breakpoint('small') {
+@include breakpoint('medium') {
   .App {
     display: grid;
     grid-template: {
       columns: auto 15rem;
-      rows: 3em minmax(calc(100vh - 6rem), max-content) 3em;
       areas: 'header header'
              'main sidebar'
              'footer footer';
