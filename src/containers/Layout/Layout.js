@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
+import { PropTypes } from 'prop-types';
 
 import styles from './Layout.module.scss';
 import SiteInfo from '../../data/site-info';
 import Nav from '../../components/Nav/Nav';
-import Home from '../../components/Home/Home';
 import Footer from '../../components/Footer/Footer';
 
 class Layout extends Component {
@@ -14,6 +14,10 @@ class Layout extends Component {
   }
 
   render() {
+    const {
+      children,
+    } = this.props;
+
     return (
       <div className={styles.App}>
         <Helmet>
@@ -29,7 +33,7 @@ class Layout extends Component {
         </header>
         <aside className={styles.Sidebar} />
         <main className={styles.Content}>
-          <Home />
+          {children}
         </main>
         <footer className={styles.Footer}>
           <Footer />
@@ -38,5 +42,9 @@ class Layout extends Component {
     );
   }
 }
+
+Layout.propTypes = {
+  children: PropTypes.element.isRequired,
+};
 
 export default Layout;
