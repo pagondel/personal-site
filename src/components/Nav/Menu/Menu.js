@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+
 import styles from './Menu.module.scss';
 
 class Menu extends Component {
@@ -68,8 +70,12 @@ class Menu extends Component {
             <i className="fas fa-times fa-2x" />
           </div>
           <ul className={styles.Items}>
-            <li className={styles.Item}><a href="http://google.cl">Inicio</a></li>
-            <li className={styles.Item}>Resume</li>
+            <li className={styles.Item}>
+              <NavLink exact activeClassName={styles.Active} to="/">Inicio</NavLink>
+            </li>
+            <li className={styles.Item}>
+              <NavLink exact activeClassName={styles.Active} to="/resume">Resume</NavLink>
+            </li>
             <li className={styles.Item}>Contacto</li>
           </ul>
         </div>
