@@ -47,6 +47,11 @@
   font-weight: 700;
   list-style: none;
   margin: 1.5rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 @include breakpoint('medium') {
@@ -55,10 +60,21 @@
     width: 13.5rem;
     height: auto;
     position: fixed;
-    top: 40%;
-    right:20px;
+    top: 30%;
+    right:0;
     left: auto;
     background: $background_gray;
+    border-left: 2px solid $light-gray;
+
+    .Active {
+      color: $white;
+    }
+
+    .Active:before,
+    .Active:After {
+      content: "-";
+      margin: 0 0.5rem;
+    }
   }
 
   .Hamburger {
@@ -80,13 +96,20 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: $light-gray;
     width: 100%;
     height: 3rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     list-style: none;
-    margin: 0;
-    margin-bottom:1px;
-    background: $gray;
+    margin: 2rem 0;
+
+    &:hover {
+      background: $light-gray;
+    }
+
+    a {
+      color: $active-link;
+      padding: 0.5rem 1rem;
+
+    }
   }
 }
