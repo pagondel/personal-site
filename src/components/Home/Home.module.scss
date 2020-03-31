@@ -2,13 +2,7 @@
 @import '../../styles/_mixins';
 
 .Home {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 80%;
-  margin: auto;
+    @include main-layout();
 }
 
 .Photo {
