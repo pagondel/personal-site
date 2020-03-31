@@ -24,7 +24,6 @@ class Layout extends Component {
           <title>{SiteInfo.title}</title>
           <meta name="keywords" content={SiteInfo.keywords.join()} />
           <meta name="description" content={SiteInfo.description} />
-          <script src={SiteInfo.fontAwesome} cossorigin="anonymous" />
         </Helmet>
         <header className={styles.Header}>
           <Nav
