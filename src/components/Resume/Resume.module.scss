@@ -1,0 +1,60 @@
+@import '../../styles/_variables';
+@import '../../styles/_mixins';
+
+.Resume {
+  @include main-layout();
+  width: 90%;
+}
+
+.Title {
+  font-size: $title-size;
+}
+
+.Timeline {
+	position: relative;
+	margin: 0;
+
+  &:before {
+    content: "";
+    border-left: 5px solid $white;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+	}
+
+  &:after {
+    content: "";
+    left: -10px;
+    position: absolute;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: $white;
+  }
+
+  .Item {
+  	padding: 0 1rem 3rem 1rem;
+    position: relative;
+    list-style: none;
+
+    &:before {
+    	content: "";
+    	position: absolute;
+    	top: 0;
+    	left: -57px;
+    	width: 30px;
+    	height: 30px;
+    	border-radius: 50%;
+    	background: $background-gray;
+    	border: 5px solid $white;
+    }
+  }
+}
+
+@include breakpoint('medium') {
+  .Resume {
+    width: 80%;
+  }
+}
