@@ -9,15 +9,18 @@
 }
 
 .Title {
+  font-family: 'Baloo Thambi 2', cursive, sans-serif;
   margin-left:2rem;
   width: 100%;
   color: $white;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-variant: small-caps;
 }
 
 @include breakpoint('small') {
   .Nav {
     justify-content: flex-start;
   }
+
 }
