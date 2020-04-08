@@ -71,12 +71,11 @@ class Menu extends Component {
           </div>
           <ul className={styles.Items}>
             <li className={styles.Item}>
-              <NavLink exact activeClassName={styles.Active} to="/">Inicio</NavLink>
+              <NavLink onClick={this.handleCloseMenu} exact activeClassName={styles.Active} to="/">Inicio</NavLink>
             </li>
             <li className={styles.Item}>
-              <NavLink exact activeClassName={styles.Active} to="/resume">Resume</NavLink>
+              <NavLink onClick={this.handleCloseMenu} exact activeClassName={styles.Active} to="/resume">Resume</NavLink>
             </li>
-            <li className={styles.Item}>Contacto</li>
           </ul>
         </div>
       </>
