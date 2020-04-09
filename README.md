@@ -15,6 +15,7 @@ My personal site, built on top of React, easy to modify.
 ```bash
     npm run
 ```
+
 ### Modify
 1. Update public/index.html with your meta tags.
 2. Replace the favicons in public/ folder.
