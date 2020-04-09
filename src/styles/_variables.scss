@@ -1,5 +1,17 @@
 // Breakpoints
 $breakpoints: (
-  small: 576px,
-  medium: 992px
-)
+  small: 36rem,
+  medium: 62rem,
+  large: 75rem
+);
+
+//colors
+$gray: #333333;
+$light-gray: #5B5B5B;
+$active-link: #BABABA;
+$transparent_black: rgba(0, 0, 0, 0.8);
+$white: #FBFBFB;
+$background-gray: #1D1D1D;
+
+//sizes
+$title-size: 3rem;

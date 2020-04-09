@@ -1,0 +1,46 @@
+@import '../../styles/_variables';
+@import '../../styles/_mixins';
+
+.App {
+  color: $white;
+  display: grid;
+  grid-template: {
+    areas: 'header'
+           'main'
+           'footer';
+    rows: 6rem minmax(calc(100vh - 12rem), max-content) 6rem
+  }
+}
+
+.Header {
+  grid-area: header;
+}
+
+.Sidebar {
+  display: none;
+  grid-area: sidebar;
+}
+
+.Content {
+  grid-area: main;
+}
+
+.Footer {
+  grid-area: footer;
+}
+
+@include breakpoint('medium') {
+  .App {
+    display: grid;
+    grid-template: {
+      columns: auto 15rem;
+      areas: 'header header'
+             'main sidebar'
+             'footer none';
+    }
+  }
+
+  .Sidebar {
+    display: block;
+  }
+}
