@@ -1,4 +1,4 @@
-# [pagondel.org](https://www.pagondel.org).
+# [pagondel.org](https://www.pagondel.org)
 
 My personal site, built on top of React, easy to modify.
 
@@ -8,13 +8,13 @@ My personal site, built on top of React, easy to modify.
     git clone https://github.com/pagondel/personal-site.git
     cd personal-site
     npm install
-    ```
+```
 
 ### Run dev
 
 ```bash
     npm run
-    ```
+```
 ### Modify
 1. Update public/index.html with your meta tags.
 2. Replace the favicons in public/ folder.
@@ -25,7 +25,7 @@ My personal site, built on top of React, easy to modify.
 
 ```bash
     npm build
-    ```
+```
 
 Please feel free to reach out to me by filing an issue
 
