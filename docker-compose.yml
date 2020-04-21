@@ -1,0 +1,12 @@
+
+version: '3'
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    tty: true
+    stdin_open: true
+    image: personal-site:production
+    ports:
+      - 8080:80

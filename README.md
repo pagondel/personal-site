@@ -7,13 +7,12 @@ My personal site, built on top of React, easy to modify.
 ```bash
     git clone https://github.com/pagondel/personal-site.git
     cd personal-site
-    npm install
 ```
 
 ### Run dev
 
 ```bash
-    npm run
+    docker-compose -f docker-compose-dev.yml up
 ```
 
 ### Modify
@@ -22,10 +21,10 @@ My personal site, built on top of React, easy to modify.
 3. Update the content in the data folder.
 
 
-### Build for production
+### Run production
 
 ```bash
-    npm build
+    docker-compose up -d
 ```
 
 Please feel free to reach out to me by filing an issue
