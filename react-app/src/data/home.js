@@ -25,13 +25,13 @@ const data = {
         servicios back-end.
       </p>
       <p>
-        Actualmente me desarrollo como software developer engineer en
+        Actualmente me desarrollo como software engineer en
         {' '}
-        <a href="https://www.peixe.cl" target="_blank" rel="noopener noreferrer">Groupon/Peixe</a>
+        <a href="https://www.boosmap.com" target="_blank" rel="noopener noreferrer">Boosmap</a>
         {' '}
-        , miembro del equipo encargado de disponibilizar herramientas requeridas para el envío de
+        , desarrollando las herramientas que permiten la logística de última milla permitiendo
         {' '}
-        correos masivos, logrando envíar millones correos diarios.
+        coordinar miles de envíos diarios.
       </p>
     </>
   ),

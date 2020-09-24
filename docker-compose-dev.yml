@@ -1,0 +1,13 @@
+version: '3'
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: docker/react-app/Dockerfile
+    image: personal-site:dev
+    tty: true
+    volumes:
+      - ./react-app/src:/var/www/personal-site/src
+      - ./react-app/public:/var/www/personal-site/public
+    ports:
+      - 3000:3000
