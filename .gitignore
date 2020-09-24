@@ -21,3 +21,6 @@ react-app/node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+react-app/build
+react-app/package-lock.json
