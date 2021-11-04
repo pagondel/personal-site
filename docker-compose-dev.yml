@@ -7,7 +7,7 @@ services:
     image: personal-site:dev
     tty: true
     volumes:
-      - ./react-app/src:/var/www/personal-site/src
-      - ./react-app/public:/var/www/personal-site/public
+      - ./src:/var/www/personal-site/src
+      - ./public:/var/www/personal-site/public
     ports:
       - 3000:3000

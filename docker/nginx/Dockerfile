@@ -1,4 +1,4 @@
-FROM node:14.10-alpine
+FROM node:14-alpine
 
 RUN apk add nginx
 
@@ -10,10 +10,15 @@ RUN mkdir -p $APP_TMP
 
 WORKDIR $APP_TMP
 
-COPY ./react-app/. .
+COPY ./src ./src
+COPY ./public ./public
+COPY ./package.json .
+
+RUN ls
+RUN ls public
 
 RUN npm install
-RUN npm run-script build
+RUN npm run build --verbose
 
 RUN cp -R $APP_TMP/build/* $REACT_ROOT
 
